@@ -1,0 +1,101 @@
+<wicket:extend>
+<div class="about" itemscope itemtype="http://schema.org/ImageGallery">
+    <nav>
+        <ol class="breadcrumb" itemscope itemprop="breadcrumb">
+            <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                <a href="/" itemprop="url"><span itemprop="title">Beranda</span></a>
+            </li>
+            <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                <a href="/id/indonesia" itemprop="url"><span itemprop="title">Indonesia</span></a>
+            </li>
+            <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                <a href="/id/jawa-barat" itemprop="url"><span itemprop="title">Jawa Barat</span></a>
+            </li>
+            <li>
+                <span>Bandung</span>
+            </li>
+        </ol>
+    </nav>
+    <div class="about" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/City">
+<!--
+        <div class="about-head" style="padding: 0 9em 0 9em">
+            <h3>Bandung</h3>
+            <h4>Jawa Barat, Indonesia &middot; Paris van Java/Kota Kembang</h4>
+        </div>
+-->
+        <div class="container">
+            <div class="about-section">
+                <form wicket:id="form">
+                    <div class="col-md-8">
+                        <h2><i class="fa fa-camera"></i>&nbsp;
+                            <wicket:container wicket:id="heading">Ir. H. Juanda</wicket:container></h2>
+                        <h3><i class="fa fa-road"></i>&nbsp; <a wicket:id="roadLink">Bandung &middot; Jawa Barat, Indonesia</a></h3>
+
+                        <p>
+                            <a class="btn btn-default" wicket:id="editLink"><i class="fa fa-edit"></i></a>
+                            <button class="btn btn-danger" wicket:id="trashBtn"><i class="fa fa-trash"></i></button>
+                        </p>
+
+                        <div wicket:id="map" style="width: 100%; height: 15em"></div>
+
+                        <h3>Surveys</h3>
+                        <p>
+                            <a wicket:id="addSurveyLink" class="btn btn-default"><i class="fa fa-plus"></i> Add Survey</a>
+                        </p>
+                        <ul class="list-group">
+                            <li wicket:id="surveysDv" class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <a wicket:id="link1"><img wicket:id="photo" class="img-responsive"/></a></div>
+                                    <div class="col-sm-9">
+                                        <strong><a wicket:id="link2"><wicket:container wicket:id="surveyTime"/></a></strong>
+                                        &middot; Damage: <wicket:container wicket:id="damageKind"/>
+                                        &middot; Pothole Area: <wicket:container wicket:id="potholeArea"/>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <p>
+                            <img wicket:id="calibrationImg" width="320" height="240"/>
+                        </p>
+                        <p>
+                            Vanish: <wicket:container wicket:id="vanishULabel"/>, <wicket:container wicket:id="vanishVLabel"/>
+                            &middot; Left: <wicket:container wicket:id="leftULabel"/>
+                            &middot; Right: <wicket:container wicket:id="rightULabel"/> &middot; Elevation: <wicket:container wicket:id="eleLabel"/>
+                            &middot; <a wicket:id="geoUri">Geo URI</a> &middot; <a wicket:id="gmapsLink" target="_blank">Google Maps</a>
+                        </p>
+                        <div wicket:id="infoDiv">
+                            <p>Survey Time: <wicket:container wicket:id="surveyTime"/></p>
+                            <p>Damage: <wicket:container wicket:id="damageKind"/>  <wicket:container wicket:id="damageLevel"/></p>
+                            <p>Potholes: <wicket:container wicket:id="potholeCount"/></p>
+                            <p>Pothole Width: <wicket:container wicket:id="potholeWidth"/></p>
+                            <p>Pothole Length: <wicket:container wicket:id="potholeLength"/></p>
+                            <p>Pothole Depth: <wicket:container wicket:id="potholeDepth"/></p>
+                            <p>Pothole Area: <wicket:container wicket:id="potholeArea"/></p>
+                        </div>
+                        <div wicket:id="potholeInfo">
+                            <strong style="color: red">Kerusakan: POTHOLES (BERLOBANG)</strong>
+                            <p>Penurunan berbentuk cekungan dari permukaan perkerasan sampai seluruh lapisan hotmix sampai ke base coursenya,umumnya mempunyai sisi yg tajam dan vertikal dekat sisi dari lobang, lobang biasa terjadi pada jalan yg
+                                mempunyai hotmix yg tipis 25 sampai 50 mm dan jarang terjadi pada jalan hot mix yg tebal 100 mm.</p>
+                        </div>
+
+                        <!--<h3>More info</h3>-->
+                        <!--<p><img src="/pothole1.jpg" width="300"/></p>
+                        <p><img src="/pothole1_edges2.png" width="300"/></p>
+
+                        <p><strong>Masalah yg timbul:</strong> roughness, infiltrasi air pada perkerasan</p>
+                        <p><strong>Penyebab yg mungkin:</strong> umumnya, lobang merupakan hasil dari retak buaya, lalu berlanjut akibat lalu lintas terlepasnya bagian retak menjadi lobang.</p>
+
+                        <p><strong>Perbaikan:</strong> dengan penambalan.</p>
+
+                        <div class="clearfix"> </div>-->
+                    </div>
+                </form>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+</div>
+</wicket:extend>
