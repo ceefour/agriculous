@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>Agriculous</name>
-	<description>Agriculous</description>
+	<description>Aplikasi monitor informasi harga pangan di pasar per daerah dengan integrasi Twitter.</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
